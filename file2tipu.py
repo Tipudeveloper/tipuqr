@@ -8,7 +8,6 @@ def file_to_tipuqr_rgba(file_path, output_path="tipuqr.png"):
 
     length = len(data)
 
-    # Lasketaan kuvan koko (1 pikseli = 4 tavua RGBA)
     size = math.ceil(math.sqrt(length / 4))
 
     total_bytes = size * size * 4
@@ -26,9 +25,9 @@ def file_to_tipuqr_rgba(file_path, output_path="tipuqr.png"):
     img.putdata(pixels)
     img.save(output_path, optimize=True)
 
-    print(f"Tipu RGBA QR code saved to file: {output_path} 🖼️")
-    print(f"Original file size: {length} bytes 📄")
-    print(f"Tipu QR code size: {size}x{size} pixels 📐")
+    print(f"Tipu RGBA QR code saved to file: {output_path}")
+    print(f"Original file size: {length} bytes")
+    print(f"Tipu QR code size: {size}x{size} pixels")
 
 if __name__ == "__main__":
     if len(sys.argv) < 2:
