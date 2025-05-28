@@ -1,3 +1,4 @@
+# Please someone help me make a camera scanner for it? now tbh im not a good programmer so i cant do it myself
 # tipuqr
 a replacement to the popular qr codes that can store way more data
 
